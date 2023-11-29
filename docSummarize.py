@@ -31,9 +31,8 @@ def communicate():
 
 
 # ユーザーインターフェイスの構築
-# st.title("My AI Assistant")
 st.title(":gray[A]:blue[I]:gray[B] :red[AI] Assistant")
-st.write("ChatGPT APIを使ったチャットボットです。")
+st.write("OpenAI APIを利用したアシスタントAIです。複雑な文章を要約したり、理解しやすく修正してくれたりします。")
 
 user_input = st.text_input("メッセージを入力してください。", key="user_input", on_change=communicate)
 
