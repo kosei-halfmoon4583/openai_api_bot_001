@@ -30,8 +30,7 @@ def communicate():
     st.session_state["user_input"] = ""  # 入力欄を消去
 
 # ユーザーインターフェイスの構築
-# st.title("AIB :red[AI] Assistant　:sunglasses:　")
-st.title(" :gray[A] :blue[I] :gray[B] :red[AI] Assistant　:sunglasses:　")
+st.title("AIB :red[AI] Assistant　:sunglasses:　")
 st.write("OpenAI APIを利用したアシスタントAIです。複雑な文章を要約したり、理解しやすく修正してくれたりします。")
 
 user_input = st.text_input("メッセージを入力してください。", key="user_input", on_change=communicate)
