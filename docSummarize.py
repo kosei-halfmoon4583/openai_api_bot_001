@@ -30,7 +30,7 @@ def communicate():
     st.session_state["user_input"] = ""  # 入力欄を消去
 
 # ユーザーインターフェイスの構築
-col1, col2 = st.beta_columns(3)
+col1, col2 = st.beta_columns(2)
 
 with col1:
 #    st.header("Calendar")
