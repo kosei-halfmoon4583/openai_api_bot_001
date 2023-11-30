@@ -33,9 +33,10 @@ def communicate():
 col1, col2, col3 = st.beta_columns(3)
 
 with col1:
-    st.header("streamlit")
+    st.header("Calendar")
 #    st.image("https://static.streamlit.io/examples/cat.jpg", use_column_width=True)
-    st.image("streamlit_logo.png", use_column_width=True)
+#    st.image("streamlit_logo.png", use_column_width=True)
+    date = st.date_input("Pick a date")
 
 with col2:
     st.header("A dog")
