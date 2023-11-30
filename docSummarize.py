@@ -34,7 +34,7 @@ col1, col2 = st.beta_columns(2)
 
 with col1:
 #    st.header("Calendar")
-    st.title("AIB :red[AI] Assistant　:sunglasses:　")
+    st.title("AIB :blue[Assistant]:sunglasses:　")
 
 with col2:
 #    st.header("A dog")
