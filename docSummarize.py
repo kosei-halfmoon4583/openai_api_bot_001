@@ -30,23 +30,16 @@ def communicate():
     st.session_state["user_input"] = ""  # 入力欄を消去
 
 # ユーザーインターフェイスの構築
-col1, col2, col3 = st.beta_columns(3)
+col1, col2 = st.beta_columns(3)
 
 with col1:
-    st.header("Calendar")
-#    st.image("https://static.streamlit.io/examples/cat.jpg", use_column_width=True)
-#    st.image("streamlit_logo.png", use_column_width=True)
-    date = st.date_input("Pick a date")
+#    st.header("Calendar")
+    st.title("AIB :red[AI] Assistant　:sunglasses:　")
 
 with col2:
-    st.header("A dog")
-    st.image("https://static.streamlit.io/examples/dog.jpg", use_column_width=True)
+#    st.header("A dog")
+    date = st.date_input("Pick a date")    
     
-with col3:
-    st.header("An owl")
-    st.image("https://static.streamlit.io/examples/owl.jpg", use_column_width=True)
-
-st.title("AIB :red[AI] Assistant　:sunglasses:　")
 st.write("OpenAI APIを利用したアシスタントAIです。複雑な文章を要約したり、理解しやすく修正してくれたりします。")
 
 user_input = st.text_input("メッセージを入力してください。", key="user_input", on_change=communicate)
